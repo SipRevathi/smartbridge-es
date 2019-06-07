@@ -1,0 +1,19 @@
+ifndef F_CPU
+#define F_CPU 16000000UL
+#endif
+#include <avr/io.h>
+#include <util/delay.h>
+intmain()
+{
+DDRD=0XFF;// OUTPUT
+DDRC=0X00;//INPUT
+
+ while(1)
+ {
+   if((PINC&(1<<PCO))==0)
+  {
+     PORTD|=(1<<PDO);
+    PORTD&=~(1<<PDO);
+  }
+ }
+}
