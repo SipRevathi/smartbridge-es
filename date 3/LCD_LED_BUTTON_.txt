@@ -1,0 +1,21 @@
+/*
+ * LEDBUTTON4.c
+ *
+ * Created: 6/7/2019 2:39:37 PM
+ * Author : Akula Prashanthisree
+ */
+ 
+ #ifndef F_CPU
+ #define F_CPU 16000000UL
+ #endif
+ 
+ #include <avr/io.h>
+ #include <util/delay.h>
+ 
+ #define RS 7
+ #define E 5
+ 
+ void send_command(unsigned char command);
+ void send_character(unsigned char character );
+ 
+ 
