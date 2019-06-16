@@ -1,7 +1,5 @@
 /*
- * ADC1.c
-void send_a_character(unsigned char character);
-void send_a_string(char *string_of_characters);
+ * Adc 1
 *
  * Created: 6/8/2019 10:31:03 AM
  * Author : revathi
@@ -17,7 +15,9 @@ void send_a_string(char *string_of_characters);
 #define RS 7
 
 void send_a_command(unsigned char command);
-int main(void)
+void send_a_character(unsigned char character);
+void send_a_string(char *string_of_characters);
+*int main(void)
 {
     DDRC=0XFF;//lcd output
 	DDRA=0X00;//input
